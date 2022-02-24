@@ -1,0 +1,28 @@
+{
+  "name": "TypeScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "test-dts/index.d.ts",
+  "scripts": {
+    "build:w": "tsc -w",
+    "test": "tsd"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "tsd": "^0.19.1"
+  },
+  "tsd": {
+    "directory": "test-dts",
+    "compilerOptions": {
+      "strict": false,
+      "lib": [
+        "esnext",
+        "dom"
+      ]
+    }
+  }
+}
