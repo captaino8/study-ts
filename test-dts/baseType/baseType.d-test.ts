@@ -32,4 +32,20 @@ describe("基础类型", () => {
       let arr: Array<number> = [1, 2, 3]
     })
   })
+  describe("any 类型", () => {
+    describe("赋值任意类型", () => {
+      let obj: any = 0;
+      obj = "hello";
+      obj = 100;
+    })
+    describe("可以获取它的任意属性或调用它的任意函数", () => {
+      let obj: any = 0;
+      console.log(obj.foo)
+      obj.get()
+    })
+    describe("未指定一个类型，TypeScript 也不能从上下文推断出它的类型，编译器就会默认设置为 any 类型", () => {
+      let foo
+      foo = 123
+    })
+  })
 })
