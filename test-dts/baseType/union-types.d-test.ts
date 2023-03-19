@@ -16,8 +16,8 @@ describe("联合类型", () => {
       console.log(foo.toString())
     })
   })
-  describe("上下文推断,类型推论",()=>{
-    let foo : number|string
+  describe("上下文推断,类型推论", () => {
+    let foo: number | string
     // 类型被推导为 string
     foo = 'example'
     console.log(foo.length)
